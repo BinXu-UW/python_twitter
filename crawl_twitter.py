@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
 
-driver = webdriver.Chrome(executable_path='D:\chromedriver_win32\chromedriver.exe')
+driver = webdriver.Chrome(executable_path='D:\....\chromedriver.exe')
 #添加自己的chromedriver的环境变量
 #driver.maximize_window()
 
@@ -18,11 +18,11 @@ driver.get('https://twitter.com/login')
 time.sleep(3)
 
 driver.find_element_by_class_name('js-username-field').clear()# 选择用户名框
-driver.find_element_by_class_name('js-username-field').send_keys('fallingred360@gmail.com')#Twitter 账户
+driver.find_element_by_class_name('js-username-field').send_keys('xxxxxxx@gmail.com')#Twitter 账户
 
 
 driver.find_element_by_class_name('js-password-field').clear()
-driver.find_element_by_class_name('js-password-field').send_keys('thisisatestmm')#twitter 密码
+driver.find_element_by_class_name('js-password-field').send_keys('xxxxxxxxx')#twitter 密码
 
 #driver.find_element_by_id('login_button').click()
 driver.find_element_by_css_selector('button.submit.EdgeButton.EdgeButton--primary.EdgeButtom--medium').submit()
