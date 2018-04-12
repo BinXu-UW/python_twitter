@@ -19,11 +19,11 @@ driver.get('https://twitter.com/login')
 time.sleep(3) #sleep is important or you won't be able to login
 
 driver.find_element_by_class_name('js-username-field').clear()# 选择用户名框 clear the username box
-driver.find_element_by_class_name('js-username-field').send_keys('fallingred360@gmail.com')#Twitter 账户 Yor username
+driver.find_element_by_class_name('js-username-field').send_keys('xxxxxxxx@gmail.com')#Twitter 账户 Yor username
 
 
 driver.find_element_by_class_name('js-password-field').clear()# clear the password box
-driver.find_element_by_class_name('js-password-field').send_keys('thisisatestmm')#twitter 密码 password
+driver.find_element_by_class_name('js-password-field').send_keys('xxxxxxx')#twitter 密码 password
 
 #driver.find_element_by_id('login_button').click()
 driver.find_element_by_css_selector('button.submit.EdgeButton.EdgeButton--primary.EdgeButtom--medium').submit()
